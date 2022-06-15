@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="cssv/bootstrap.min.css">
+<link rel="stylesheet" href="cssv/font-awesome.min.css">
+<link rel="stylesheet" href="cssv/magnific-popup.css">
+
+<link rel="stylesheet" href="cssv/owl.theme.css">
+<link rel="stylesheet" href="cssv/owl.carousel.css">
+
+<!-- MAIN CSS -->
+<link rel="stylesheet" href="cssv/tooplate-style.css">
+<style>
+     main
+{
+  height: 100%;
+  margin: auto 0;
+  font-family: 'Raleway','Microsoft JhengHei';
+}
+
+.fixed-bg {
+  min-height: 100%;
+  background-size: cover;
+  -webkit-background-size: cover !important; 
+  -moz-background-size: cover !important; 
+  -o-background-size: cover; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+  line-height: 1.5;    
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5em;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
+  opacity: 0.95;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.main-text {
+  font-size: 5.5em;
+  line-height:0px;
+}
+.sub-text{
+  color:#fff;
+  line-height:0px;
+  text-shadow: 1px 1px 10px #000, 5px 5px 20px #000, 1px 0px 20px #def;
+}
+.text-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  margin: 0;
+  max-width: 500px;
+}
+.fixed-bg h2 {
+  font-size: 4em;
+}
+.fixed-bg p {
+  text-align: center;
+  max-width: 500px;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.bg-1 {
+  background-image: url("https://images.unsplash.com/photo-1611222566512-cb8dd8e689e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+.bg-1-1 {
+  background-image: url("https://images.unsplash.com/photo-1615461620987-dc50257062c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80");
+}
+.bg-2 {
+  background-image: url("https://images.unsplash.com/photo-1602189213894-4c7ddde185f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+.bg-2-1 {
+  background-image: url("https://images.unsplash.com/photo-1533575770077-052fa2c609fc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+.bg-3 {
+  background-image: url("https://images.unsplash.com/photo-1621288952381-9e7017e4bd0c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+.bg-3-1 {
+  background-image: url("https://images.unsplash.com/photo-1610805177214-885738d255f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
+}
+.bg-4 {
+  background-image: url("https://images.unsplash.com/photo-1498847559558-1e4b1a7f7a2f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+
+.button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+}
+
+.button.play {
+     padding-left: 300px;
+     transform: translateY(100%);
+  width: 74px;
+  height: 74px;
+  border-style: solid;
+  border-width: 37px;
+  border-color: #202020;
+  border-width: 37px 37px 37px 37px;
+  border-color: red blue green yellow;
+  border-width: 37px 0px 37px 74px;
+  border-color: red blue green yellow;
+  box-sizing: border-box;
+  width: 74px;
+  height: 74px;
+  border-width: 37px 0px 37px 74px;
+  border-color: transparent transparent transparent white;
+}
+.button.play:hover{
+     border-color: transparent transparent transparent aqua;
+}
+.button.pause {
+transform: translateX(250%);
+  width: 74px;
+  height: 74px;
+  border-style: solid;
+  border-width: 37px;
+  border-color: #202020;
+  border-style: double;
+  border-width: 0px 37px 0px 37px;
+  border-width: 0px 0px 0px 37px;
+  border-color: white;
+}
+.button.pause:hover{
+     border-color: aqua;
+}
+</style>
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+<div class="preloader">
+     <div class="spinner">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+
+<!-- MENU -->
+<div class="navbar custom-navbar navbar-fixed-top" role="navigation">
+     <div class="container">
+
+          <!-- NAVBAR HEADER -->
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <!-- lOGO -->
+               <a href="/index" class="navbar-brand">F E E L</a>
+          </div>
+
+          <!-- MENU LINKS -->
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="/index" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">Studio</a></li>
+                    <li><a href="#team" class="smoothScroll">Our People</a></li>  
+                    <li><a href="#contact" class="smoothScroll">Let's talk</a></li> -->
+               </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<!-- HOME -->
+<section id="home" class="parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-8 col-sm-12">
+                    <div class="home-text">
+                         <h1 style="transform: translateX(-64px);">Meditation & Scenic</h1>
+                         <p>Feel the beauty of the nature through your device and detoxc your stress</p>
+                         <ul class="section-btn">
+                              <a href="#about" class="smoothScroll"><span data-hover="Discover More">Discover More</span></a>
+                         </ul>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+
+     <!-- Video -->
+     <video controls autoplay loop muted>
+          <source src="videos/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+     </video>
+</section>
+<!--freefront-->
+<main>
+     <div class="fixed-bg bg-1">
+       <h1>FOREST</h1>
+       <audio id="myAudioa">
+          <source src="audio/mixkit-little-birds-singing-in-the-trees-17.wav" type="audio/mpeg">
+        </audio>
+        <div><button onclick="playAudioa()" type="button" class='button play'></button>
+          <button onclick="pauseAudioa()" type="button"class='button pause' style="transform: translateY(150%);"></button></div>
+<script>
+var a = document.getElementById("myAudioa"); 
+
+function playAudioa() { 
+  a.play();
+  a.loop = true; 
+} 
+
+function pauseAudioa() { 
+  a.pause();
+  a.loop = false; 
+} 
+</script>
+     </div>
+     <div class="fixed-bg bg-1-1">
+         <h1>BEACH</h1>
+         <audio id="myAudiob">
+          <source src="audio/mixkit-sea-waves-loop-1196.wav" type="audio/mpeg">
+        </audio>
+        <button onclick="playAudiob()" type="button"class='button play'></button>
+        <button onclick="pauseAudiob()" type="button"class='button pause'></button> 
+
+<script>
+var b = document.getElementById("myAudiob"); 
+
+function playAudiob() { 
+  b.play(); 
+  b.loop = true;
+} 
+
+function pauseAudiob() { 
+  b.pause(); 
+  b.loop = false; 
+} 
+</script>
+     </div>
+     <div class="fixed-bg bg-2">
+       <h1>THUNDERSTROM</h1>
+       <audio id="myAudioc">
+          <source src="audio/mixkit-nature-ambience-with-lightning-strike-and-thunder-3093.wav" type="audio/mpeg">
+        </audio>
+        <button onclick="playAudioc()" type="button"class='button play'></button><button onclick="pauseAudioc()" type="button"class='button pause'></button> 
+
+<script>
+var c = document.getElementById("myAudioc"); 
+
+function playAudioc() { 
+  c.play(); 
+  c.loop = true;
+} 
+
+function pauseAudioc() { 
+  c.pause(); 
+  c.loop = false; 
+} 
+</script>
+     </div>
+     <div class="fixed-bg bg-2-1">
+          <h1>CAMPFIRE</h1>
+          <audio id="myAudiod">
+               <source src="audio/fire-2.mp3" type="audio/mpeg">
+             </audio>
+             <button onclick="playAudiod()" type="button"class='button play'></button><button onclick="pauseAudiod()" type="button"class='button pause'></button> 
+
+<script>
+var d = document.getElementById("myAudiod"); 
+
+function playAudiod() { 
+  d.play(); 
+  d.loop = true;
+} 
+
+function pauseAudiod() { 
+  d.pause(); 
+  d.loop = false; 
+} 
+</script>
+     </div>
+     <div class="fixed-bg bg-3">
+       <h1>RIVER</h1>
+       <audio id="myAudioe">
+          <source src="audio/mixkit-river-water-flowing-2454.wav" type="audio/mpeg">
+        </audio>
+        <button onclick="playAudioe()" type="button"class='button play'></button><button onclick="pauseAudioe()" type="button"class='button pause'></button> 
+
+<script>
+var e = document.getElementById("myAudioe"); 
+
+function playAudioe() { 
+  e.play(); 
+  e.loop = true;
+} 
+
+function pauseAudioe() { 
+  e.pause(); 
+  e.loop = false; 
+} 
+</script>
+     </div>
+     <div class="fixed-bg bg-4">
+       <h1>RAIN</h1>
+       <audio id="myAudiof">
+          <source src="audio/rain-03.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="playAudiof()" type="button"class='button play'></button><button onclick="pauseAudiof()" type="button"class='button pause'></button> 
+
+<script>
+var f = document.getElementById("myAudiof"); 
+
+function playAudiof() { 
+  f.play(); 
+  f.loop = true;
+} 
+
+function pauseAudiof() { 
+  f.pause(); 
+  f.loop = false; 
+} 
+</script>
+     </div>
+     <div class="fixed-bg">
+       <h2 style="color: #fff;">F E E L</h2>
+       <p style="color: #fff;">
+         Feel the right things
+       </p>
+     </div>
+   </main>
+
+
+
+
+<!-- SCRIPTS -->
+<script src="jsv/jquery.js"></script>
+<script src="jsv/bootstrap.min.js"></script>
+<script src="jsv/jquery.parallax.js"></script>
+<script src="jsv/owl.carousel.min.js"></script>
+<script src="jsv/jquery.magnific-popup.min.js"></script>
+<script src="jsv/magnific-popup-options.js"></script>
+<script src="jsv/modernizr.custom.js"></script>
+<script src="jsv/smoothscroll.js"></script>
+<script src="jsv/custom.js"></script>
+
+</body>
+</html>
